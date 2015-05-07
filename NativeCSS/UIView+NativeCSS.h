@@ -109,6 +109,16 @@
  */
 -(NSString*) CSSId;
 
+/**
+ Inspect and modify styles to be applied to a view.
+ 
+ @param processBlock accepts and returns a dictionary of styles, developers can modify the styling in this dictionary, but this is unsupported. Set to nil to remove processing block.
+ **/
+- (void) setCSSStylingPreprocessBlock:(NSMutableDictionary* (^)(NSMutableDictionary *matchingStyle)) processBlock;
 
+/**
+ Returns the current preprocess block for this view.
+ */
+-(NSMutableDictionary* (^)(NSMutableDictionary *matchingStyle)) CSSStylingPreprocessBlock;
 
 @end
