@@ -395,4 +395,9 @@ Our recommended setup is loading an initial CSS file and developing your CSS wit
  @param debugLoggingEnabled set to true to enable debug logging.
  */
 +(void) setCSSDebugLogging:(BOOL) debugLoggingEnabled;
+
+/**
+ Sets the Studio URL.
+ **/
++(void) setStudioHost:(NSString*) serverHost1;
 @end
