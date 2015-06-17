@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NativeCSS"
-  s.version      = "1.0.4"
+  s.version      = "2.0.0"
   s.summary      = "Simplify your mobile development by styling native apps in CSS."
   #s.description  = <<-DESC                 DESC
   s.homepage     = "http://nativecss.com"
